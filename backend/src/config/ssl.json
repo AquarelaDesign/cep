@@ -1,0 +1,5 @@
+{
+    "privateKey":"/etc/httpd/ssl/procyon_com_br.key",
+    "certificate":"/etc/httpd/ssl/procyon_com_br.crt",
+    "ca":"/etc/httpd/ssl/gd_bundle-g2-g1.crt"
+}

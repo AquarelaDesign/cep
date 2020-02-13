@@ -74,8 +74,6 @@ CEP.route('', (req, res, next) => {
 
             Data = Global.ajustaRes(data)
             
-            console.log('Data', )
-    
             if (Object.keys(Data[0].metadata).length < 1) {
                 total = 0
 

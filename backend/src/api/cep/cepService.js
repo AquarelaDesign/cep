@@ -1,12 +1,10 @@
 const CEP = require('./cep')
-const errorHandler = require('../common/errorHandler')
 const Global = require('../common/global')
 
-CEP.methods(['get', 'post', 'put', 'delete'])
-CEP.updateOptions({new: true, runValidators: true})
-CEP.after('post', errorHandler).after('put', errorHandler)
-
-CEP.route('', (req, res, next) => {
+exports.servico = (req, res) => {
+        
+    console.log(req)
+    
     var Cep = 0
     
     if (req.params.id == "" || req.params.id === undefined) {
@@ -99,8 +97,4 @@ CEP.route('', (req, res, next) => {
         }
         res.send(response)
     })
-
-})
-
-
-module.exports = CEP
+}

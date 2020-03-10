@@ -1,7 +1,8 @@
-const restful = require('node-restful')
-const mongoose = restful.mongoose
+//const restful = require('node-restful')
+//const mongoose = restful.mongoose
+const { Schema, model } = require('mongoose')
 
-const geoSchema = new mongoose.Schema({
+const geoSchema = new Schema({
     cep: { type: Number, required: true },
     Tipo_Logradouro: { type: String, required: false },
     Logradouro: { type: String, required: false },
@@ -16,7 +17,7 @@ const geoSchema = new mongoose.Schema({
     longitude: { type: Number, required: false }
 }, { collection: 'geo' })
 
-const cepSchema = new mongoose.Schema({
+const cepSchema = new Schema({
     CEP: { type: Number, required: true },
     Tipo_Logradouro: { type: String, required: false },
     Logradouro: { type: String, required: false },
@@ -31,4 +32,4 @@ const cepSchema = new mongoose.Schema({
 }, { collection: 'integrada' })
 
 
-module.exports = restful.model('CEP', cepSchema)
+module.exports = model('CEP', cepSchema)

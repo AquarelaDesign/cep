@@ -1,6 +1,6 @@
 {
   "name": "fdc-backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FDC Services",
   "main": "src/loader.js",
   "scripts": {
@@ -12,10 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
+    "body-parser": "^1.15.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.6.8",
+    "node-restful": "^0.2.5",
     "saslprep": "^1.0.3"
   },
   "devDependencies": {

@@ -1,0 +1,5 @@
+{
+    "privateKey":"D:\\Projetos\\certs\\procyon_com_br.key",
+    "certificate":"D:\\Projetos\\certs\\procyon_com_br.crt",
+    "ca":"D:\\Projetos\\certs\\gd_bundle-g2-g1.crt"
+}
